@@ -27,10 +27,10 @@ public class User implements Serializable{
 	public User() {
 		
 	}
-
-	public User(long l, String name, String email, String phone, String password) {
+	
+	public User(Long id, String name, String email, String phone, String password) {
 		super();
-		this.id = l;
+		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.phone = phone;
@@ -41,7 +41,7 @@ public class User implements Serializable{
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
